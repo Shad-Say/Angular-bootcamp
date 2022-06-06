@@ -1,0 +1,4 @@
+.tpImage {
+  display: grid;
+  place-content: center;
+}
