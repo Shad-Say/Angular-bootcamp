@@ -13,6 +13,6 @@ export class ChangeUsernameComponent implements OnInit {
   ngOnInit(): void {}
 
   updateInput(event: any): void {
-    this.username = event.target.value;
+    this.username! = event.target.value;
   }
 }

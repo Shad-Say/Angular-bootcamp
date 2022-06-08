@@ -1,3 +1,4 @@
+import { NgSwitch } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,8 +13,8 @@ export class ShowPasswordComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public showPassword(event: any): void {
-    if (event.target.checked) {
+  public showPassword(event: Event): void {
+    if ((<HTMLInputElement>event.target).checked) {
       this.inputType = 'text';
     } else {
       this.inputType = 'password';

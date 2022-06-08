@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+.landing-page {
+  background: white
+    url("https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.5");
+  color: white;
+}
+
+.wrapper {
+  background-color: rgb(0, 0, 0, 0.6);
+}

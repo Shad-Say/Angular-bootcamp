@@ -1,0 +1,55 @@
+<!-- <pre>{{ users | json }}</pre> -->
+
+<section class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h3 text-danger">User List And Fetching Error Handling</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt
+          minima repellendus vel pariatur architecto quaerat eligendi beatae
+          consectetur repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button (click)="getUsersData()" class="btn btn-success btn-sm">
+          Get Users Data
+        </button>
+        <div class="row">
+          <div class="col">
+            <p class="h4 text-danger">{{ errorMessage }}</p>
+          </div>
+        </div>
+        <table class="table table-hover text-center table-striped shadow-lg">
+          <thead class="bg-secondary text-white">
+            <tr>
+              <th>Sr no.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Website</th>
+              <th>City</th>
+              <th>Zip Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.website }}</td>
+              <td>{{ user.address.city }}</td>
+              <td>{{ user.address.zipcode }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

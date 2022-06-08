@@ -15,6 +15,28 @@ import { SmsAppComponent } from './components/sms-app/sms-app.component';
 import { ShowPasswordComponent } from './components/show-password/show-password.component';
 import { AmountRangeComponent } from './components/amount-range/amount-range.component';
 import { ThemeComponent } from './components/theme/theme.component';
+import { UserRegisterComponent } from './components/user-register/user-register.component';
+import { AuthUserComponent } from './components/auth-user/auth-user.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ContactAppComponent } from './components/contact-app/contact-app.component';
+import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CountryListComponent } from './components/country-list/country-list.component';
+import { CountryDetailsComponent } from './components/country-details/country-details.component';
+
+interface Employee {
+  sno: string;
+  name: string;
+  age: number;
+  designation: string;
+  doj: Date;
+  salary: number;
+}
 
 @NgModule({
   declarations: [
@@ -30,8 +52,19 @@ import { ThemeComponent } from './components/theme/theme.component';
     ShowPasswordComponent,
     AmountRangeComponent,
     ThemeComponent,
+    UserRegisterComponent,
+    AuthUserComponent,
+    UserListComponent,
+    ContactAppComponent,
+    ContactListComponent,
+    ContactCardComponent,
+    HomeComponent,
+    AboutComponent,
+    NavbarComponent,
+    CountryListComponent,
+    CountryDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
